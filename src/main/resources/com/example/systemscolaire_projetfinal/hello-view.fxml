@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="500" maxWidth="500" minHeight="500" minWidth="500" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.systemscolaire_projetfinal.HelloController">
+  <tabs>
+    <Tab text="Accueil">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="215.0" fitWidth="500.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                          <Image url="@../../../Images/cgmv.png" />
+                      </image>
+                  </ImageView>
+               </children>
+        </AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Cours">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableCours" layoutY="-2.0" prefHeight="474.0" prefWidth="500.0">
+                    <columns>
+                      <TableColumn fx:id="nomCours" prefWidth="151.0" text="Nom" />
+                      <TableColumn fx:id="codeCours" prefWidth="83.0" text="Code" />
+                        <TableColumn fx:id="descriptionCours" prefWidth="147.0" text="Description" />
+                        <TableColumn fx:id="professeurCours" editable="false" prefWidth="113.0" text="Professeur" />
+                    </columns>
+                  </TableView>
+                   <Button fx:id="btnAjouterCours" layoutX="29.0" layoutY="420.0" mnemonicParsing="false" onAction="#ajouterUnCours" prefHeight="36.0" prefWidth="443.0" text="Ajouter" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Professeur">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableProfesseurs" prefHeight="474.0" prefWidth="500.0">
+                    <columns>
+                      <TableColumn fx:id="nomProfesseur" prefWidth="151.0" text="Nom" />
+                      <TableColumn fx:id="prenomProfesseur" prefWidth="146.0" text="Prenom" />
+                        <TableColumn fx:id="identifiantProfesseur" prefWidth="86.0" text="Identifiant" />
+                        <TableColumn fx:id="salaireProfesseur" prefWidth="116.0" text="Salaire" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btnAjouterProfesseur" layoutX="29.0" layoutY="420.0" mnemonicParsing="false" onAction="#ajouterUnProfesseur" prefHeight="36.0" prefWidth="443.0" text="Ajouter" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Etudiant">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableEtudiants" prefHeight="471.0" prefWidth="500.0">
+                    <columns>
+                      <TableColumn fx:id="nomEtudiant" prefWidth="151.0" text="Nom" />
+                      <TableColumn fx:id="prenomEtudiant" prefWidth="146.0" text="Prenom" />
+                        <TableColumn fx:id="identifiantEtudiant" prefWidth="86.0" text="Identifiant" />
+                        <TableColumn fx:id="coterEtudiant" prefWidth="116.0" text="Cote R" />
+                    </columns>
+                  </TableView>
+                   <Button fx:id="btnAjouterEtudiant" layoutX="29.0" layoutY="420.0" mnemonicParsing="false" onAction="#ajouterUnEtudiant" prefHeight="36.0" prefWidth="443.0" text="Ajouter" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Credits">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="125.0" layoutY="419.0" prefHeight="29.0" prefWidth="250.0" text="Remerciements au professeur Samuel Fostiné." />
+                  <ImageView fitHeight="405.0" fitWidth="583.0" layoutX="81.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="@../../../Images/Boric.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

@@ -1,0 +1,36 @@
+[ {
+  "nom" : "Andino",
+  "prenom" : "Facundo",
+  "identifiant" : "203928382",
+  "salaire" : 900.0
+}, {
+  "nom" : "Andino",
+  "prenom" : "Facundo",
+  "identifiant" : "203928382",
+  "salaire" : 900.0
+}, {
+  "nom" : "Allen",
+  "prenom" : "Ricardo",
+  "identifiant" : "29392838",
+  "salaire" : 1.0
+}, {
+  "nom" : "Andino",
+  "prenom" : "Facundo",
+  "identifiant" : "203928382",
+  "salaire" : 900.0
+}, {
+  "nom" : "Allen",
+  "prenom" : "Ricardo",
+  "identifiant" : "29392838",
+  "salaire" : 1.0
+}, {
+  "nom" : "Rodriguez",
+  "prenom" : "Fernando",
+  "identifiant" : "8978362636",
+  "salaire" : 800.0
+}, {
+  "nom" : "Silva",
+  "prenom" : "Mario",
+  "identifiant" : "2938283828932",
+  "salaire" : 1.0E8
+} ]
