@@ -20,6 +20,4 @@ public class Professeur extends Personne{
         this.salaire = salaire;
     };
 
-
-
 }

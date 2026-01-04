@@ -31,7 +31,7 @@
                         <TableColumn fx:id="professeurCours" editable="false" prefWidth="113.0" text="Professeur" />
                     </columns>
                   </TableView>
-                   <Button fx:id="btnAjouterCours" layoutX="29.0" layoutY="420.0" mnemonicParsing="false" onAction="#ajouterUnCours" prefHeight="36.0" prefWidth="443.0" text="Ajouter" />
+                   <Button fx:id="btnAjouterCours" onAction="#ajouterUnCours" layoutX="29.0" layoutY="420.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="443.0" text="Ajouter" />
                </children></AnchorPane>
       </content>
     </Tab>
@@ -47,7 +47,7 @@
                         <TableColumn fx:id="salaireProfesseur" prefWidth="116.0" text="Salaire" />
                     </columns>
                   </TableView>
-                  <Button fx:id="btnAjouterProfesseur" layoutX="29.0" layoutY="420.0" mnemonicParsing="false" onAction="#ajouterUnProfesseur" prefHeight="36.0" prefWidth="443.0" text="Ajouter" />
+                  <Button fx:id="btnAjouterProfesseur" onAction="#ajouterUnProfesseur" layoutX="29.0" layoutY="420.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="443.0" text="Ajouter" />
                </children></AnchorPane>
          </content>
       </Tab>
@@ -63,21 +63,13 @@
                         <TableColumn fx:id="coterEtudiant" prefWidth="116.0" text="Cote R" />
                     </columns>
                   </TableView>
-                   <Button fx:id="btnAjouterEtudiant" layoutX="29.0" layoutY="420.0" mnemonicParsing="false" onAction="#ajouterUnEtudiant" prefHeight="36.0" prefWidth="443.0" text="Ajouter" />
+                   <Button fx:id="btnAjouterEtudiant" onAction="#ajouterUnEtudiant" layoutX="29.0" layoutY="420.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="443.0" text="Ajouter" />
                </children></AnchorPane>
          </content>
       </Tab>
       <Tab text="Credits">
          <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-               <children>
-                  <Label layoutX="125.0" layoutY="419.0" prefHeight="29.0" prefWidth="250.0" text="Remerciements au professeur Samuel Fostiné." />
-                  <ImageView fitHeight="405.0" fitWidth="583.0" layoutX="81.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                         <Image url="@../../../Images/Boric.png" />
-                     </image>
-                  </ImageView>
-               </children></AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
          </content>
       </Tab>
   </tabs>

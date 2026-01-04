@@ -23,13 +23,11 @@ import java.util.ResourceBundle;
 public class HelloController implements Initializable {
     ObservableList<Professeur> listeProfesseurs = FXCollections.observableArrayList();
     ObservableList<Etudiant> listeEtudiants = FXCollections.observableArrayList();
-    ObservableList<Cours> listeCours = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         lireProfesseur();
         lireEtudiant();
-        lireCours();
 
     }
 
@@ -62,28 +60,6 @@ public class HelloController implements Initializable {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
-    }
-
-    @FXML
-    private void lireCours() {
-        String chemin = "src/main/resources/JSON/Cours.json";
-        File fichierJson = new File(chemin);
-
-        ObjectMapper mapper = new ObjectMapper();
-        if (fichierJson.exists()) {
-            try {
-                ArrayList<Cours> cours = mapper.readValue(fichierJson, new TypeReference<>(){});
-                listeCours.addAll(cours);
-                nomCours.setCellValueFactory(new PropertyValueFactory<>("nom"));
-                codeCours.setCellValueFactory(new PropertyValueFactory<>("code"));
-                descriptionCours.setCellValueFactory(new PropertyValueFactory<>("description"));
-                professeurCours.setCellValueFactory(new PropertyValueFactory<>("professeur"));
-
-                tableCours.setItems(listeCours);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
     }
 
     ////////////////////////////////////////////////*Professeurs*////////////////////////////////////////////////

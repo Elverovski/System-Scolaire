@@ -53,6 +53,7 @@ public class HelloProfesseur implements Initializable {
         File fichierJson = new File(chemin);
 
         if (fichierJson.exists()) {
+            //https://stackoverflow.com/questions/68071388/how-to-deserialize-a-list-of-lists
             ArrayList<Professeur> professeurExistant = mapper.readValue(fichierJson, new TypeReference<>(){});
             professeurExistant.addAll(listeProfesseurs);
             mapper.writeValue(fichierJson, professeurExistant);

@@ -4,9 +4,7 @@ public class Cours {
     private String nom;
     private String code;
     private String description;
-    private String professeur;
-
-
+    private Professeur professeur;
 
     public String getNom() {
         return nom;
@@ -32,20 +30,18 @@ public class Cours {
         this.description = description;
     }
 
-    public String getProfesseur() {
+    public Professeur getProfesseur() {
         return professeur;
     }
 
-    public void setProfesseur(String professeur) {
+    public void setProfesseur(Professeur professeur) {
         this.professeur = professeur;
     }
 
-    public Cours(String nom, String code, String description, String professeur){
+    public Cours(String nom, String code, String description, Professeur professeur){
         this.nom = nom;
         this.code = code;
         this.description = description;
         this.professeur = professeur;
     }
-
-    public Cours(){}
 }
